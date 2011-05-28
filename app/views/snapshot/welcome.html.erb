@@ -1,0 +1,15 @@
+<header>
+<h1>Welcome welcoming folks!</h1>
+</header>
+<article>
+<%if flash[:error]%>
+  <p id="error"><%=h flash[:error]%></p>
+<% else %>
+  <p>This is a shiny way for us to thank you for being awesome friends.</p>
+<%end%>
+<% form_tag({:action => "view"}, :method => "get") do %>
+  <%= label_tag(:code,"Enter your code:")%>
+  <%= text_field_tag(:code) %>
+  <%= submit_tag("Go")%>
+<%end%>
+</article>

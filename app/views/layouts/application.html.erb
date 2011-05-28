@@ -1,11 +1,46 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <!--Include CSS-->
-    <script></script>
-    <title>Thanks a Million Guys</title>
-  </head>
-  <body>
-      <%= yield %>
-  </body>
+  <head id="thanksamillion.heroku.com" data-template-set="html5-reset">
+
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+  <meta http-equiv="X-UA-Chromeompatible" content="IE=edge,chrome=1">
+
+  <title>Thanks a Million Guys</title>
+
+  <meta name="title" content="Thanks A Million">
+  <meta name="description" content="Where we thank our awesome friends for letting us stay at their house">
+
+
+  <meta name="author" content="James Bell">
+  <meta name="Copyright" content="Copyright James Bell 2011. All Rights Reserved.">
+
+  <!-Reserved- Dublin Core Metadata : http://dublincore.org/ -->
+  <meta name="DC.titlele" content="Thanks a million">
+  <meta name="DC.subject" content="A web app to thank friends">
+  <meta name="DC.creator" content="James Bell">
+
+  <link rel="shortcut icon" href="/img/favicon.ico">
+
+  <!-- CSS: screen, mobile & print are all in the same file -->
+  <link rel="stylesheet" href="/stylesheets/style.css">
+
+  <!-- all our JS icons at the bottom of the page, except for Modernizr. -->
+  <script src="/javascripts/modernizr-1.7.min.js"></script>
+
+</head>
+
+<body>
+  <%= yield %>
+  <!-- here comes the javascript -->
+
+  <!-- Grab Google CSSDN's jQuery. fall back to local if necessary -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write("<script src='/javascripts/jquery-1.5.1.min.js'>\x3C/script>")</script>
+
+  <!-- this is where we put our custom functions -->
+  <script src="/javascripts/application.js"></script>
+  
+
+</body>
 </html>

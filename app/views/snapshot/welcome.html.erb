@@ -1,13 +1,16 @@
-<header>
+<header class="welcome">
 <h1>Welcome welcoming folks!</h1>
 </header>
-<article>
+<article class="welcome">
 <%if flash[:error]%>
   <p id="error"><%=h flash[:error]%></p>
 <% else %>
-  <p>This is a shiny way for us to thank you for being awesome friends.</p>
+  <p>
+    So, as promised, a shiny website. Pop the codes we left you in the box below, and pictorial presents will arrive..
+    When you've used all the codes, and there are no more to find, the website will tell you. Clever eh?
+  </p>
 <%end%>
-<% form_tag({:action => "view"}, :method => "get") do %>
+<% form_tag({:action => "view"}, :method => "post") do %>
   <%= label_tag(:code,"Enter your code:")%>
   <%= text_field_tag(:code) %>
   <%= submit_tag("Go")%>

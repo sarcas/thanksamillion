@@ -1,18 +1,14 @@
-<header class="welcome">
-<h1>Welcome welcoming folks!</h1>
+<header>
+<h1>A Thankful Picture</h1>
 </header>
 <article class="welcome">
 <%if flash[:error]%>
   <p id="error"><%=h flash[:error]%></p>
 <% else %>
-  <p>
-    So, as promised, a shiny website. Pop the codes we left you in the box below, and pictorial presents will arrive..
+  <p id="whimsy">
+    So as promised, a shiny website. Pop the codes we left you in the box below, and pictorial presents will arrive.
     When you've used all the codes, and there are no more to find, the website will tell you. Clever eh?
-  </p>
-<%end%>
-<% form_tag({:action => "view"}, :method => "post") do %>
-  <%= label_tag(:code,"Enter your code:")%>
-  <%= text_field_tag(:code) %>
-  <%= submit_tag("Go")%>
+    </p>
+    <%= render :partial => 'form'%>
 <%end%>
 </article>

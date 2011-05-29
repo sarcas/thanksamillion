@@ -1,8 +1,8 @@
 class SnapshotController < ApplicationController
   def welcome
-#    if Snapshot.completed
-#     redirect_to :action => "finished"
-#    end
+    if Snapshot.completed?
+     redirect_to :action => "finished"
+    end
   end
 
   def view
@@ -11,6 +11,8 @@ class SnapshotController < ApplicationController
       flash[:error] = "Cheeky! That's not a valid code though"
       redirect_to :action => "welcome"
     end
+    @snapshot.seen = true
+    @snapshot.save
   end
 
   def finished

@@ -1,0 +1,6 @@
+<% form_tag({:action => "view"}, :method => "post") do %>
+  <%= label_tag(:code,"Enter your code:")%>
+  <%= text_field_tag(:code) %>
+  <%= submit_tag("Go")%>
+<%end%>
+

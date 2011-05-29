@@ -176,21 +176,35 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 }
 
 /* My styles*/
+html{background:#000000}
+#wrapper
+{
+  width:650px;
+  padding:15px;
+  padding-top:40px;
+  padding-bottom:40px;
+  margin:0 auto;
+  border:2px #5353B0 solid;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
 h1
 {
   font-size:26px;
   text-align:center;
+  padding-top:15px;
 }
 
 body
 {
   padding:20px;
-  background:black;
-  color:#DDD;
+  color:#9999B0;
+  background: #000;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000',GradientType=0 );
 }
 header
 {
-  width:500px;
   margin:0 auto;
   margin-bottom:20px;
 }
@@ -199,6 +213,7 @@ article
   width: 500px;
   margin: 0 auto;
 }
-.welcome {margin-top:100px;}
-
+article.welcome {text-align:center;}
+.welcome {margin-top:80px;}
 p {margin-bottom:25px;}
+p#whimsy {text-align:left;}

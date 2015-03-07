@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class HomeControllerTest < ActionController::TestCase
+class ApplicationControllerTest < ActionController::TestCase
   # Replace this with your real tests.
   test "the truth" do
     assert true

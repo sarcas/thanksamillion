@@ -1,13 +1,7 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  code: MyString
-  picture_link: MyString
-  description: MyText
-  seen: false
-
-two:
-  code: MyString
-  picture_link: MyString
-  description: MyText
+  code: thisis;atest
+  picture_link: http://farm3.static.flickr.com/2063/5718721636_a53404219b_z.jpg
+  message: Isn't it wonderful? Check <a href="http://www.flickr.com/photos/dreadpiraterach/sets/72157626827559960/">this out!</a>
   seen: false

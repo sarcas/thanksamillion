@@ -39,7 +39,7 @@ test:
   encoding: unicode
   database: thanksamillion_test
   pool: 5
-  username: thanksamillion
+  username: postgres
   password:
 
 production:

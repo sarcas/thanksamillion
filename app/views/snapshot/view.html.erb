@@ -3,6 +3,6 @@
 </header>
 <article class="welcome">
 <img src="<%= @snapshot.picture_link %>"/>
-<p id="whimsy"><%= @snapshot.message%></p>
+<p id="whimsy"><%= raw @snapshot.message%></p>
 <p>Back to the <a href="/">Welcome page</a>?</p>
 </article>

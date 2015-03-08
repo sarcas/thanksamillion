@@ -10,6 +10,7 @@
 #       Install PostgreSQL and put its /bin directory on your path.
 development:
   adapter: postgresql
+  host: localhost
   encoding: unicode
   database: thanksamillion_development
   pool: 5
@@ -43,9 +44,10 @@ test:
   password:
 
 production:
+  url: <%= ENV["DATABASE_URL"] %>
   adapter: postgresql
   encoding: unicode
   database: thanksamillion
-  pool: 5
+  pool: <%= ENV["DATABASE_URL"] %>
   username: thanksamillion
   password:

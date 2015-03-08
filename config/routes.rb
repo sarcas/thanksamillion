@@ -1,4 +1,4 @@
 Thanksamillion::Application.routes.draw do
-  match '/' => 'snapshot#welcome'
-  match '/:controller(/:action(/:id))'
+  get '/' => 'snapshot#welcome'
+  match '/:controller(/:action(/:id))', via: :all
 end

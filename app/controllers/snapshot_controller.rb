@@ -6,7 +6,7 @@ class SnapshotController < ApplicationController
   end
 
   def view
-    @snapshot = Snapshot.all(:conditions => ["code = ?",params[:code]]).first
+    @snapshot = Snapshot.where(code: params[:code]).first
     if @snapshot.nil?
       flash[:error] = "Cheeky! That's not a valid code though"
       redirect_to :action => "welcome"

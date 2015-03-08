@@ -48,6 +48,6 @@ production:
   adapter: postgresql
   encoding: unicode
   database: thanksamillion
-  pool: <%= ENV["DATABASE_URL"] %>
+  pool: <%= ENV["MAX_THREADS"] %>
   username: thanksamillion
   password:
